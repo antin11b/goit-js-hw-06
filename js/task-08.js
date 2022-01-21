@@ -3,7 +3,7 @@ const formEl = document.querySelector('.login-form');
 const onFormElSubmit = (event) => {
     event.preventDefault();
 
-    if (event.currentTarget.elements.email.value === '' && event.currentTarget.elements.password.value === '') {
+    if (event.currentTarget.elements.email.value === '' || event.currentTarget.elements.password.value === '') {
         alert('Введите значения!');
     } else {
 
